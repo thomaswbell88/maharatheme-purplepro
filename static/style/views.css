@@ -1,0 +1,307 @@
+/* SMURF */
+body {
+    height:100%;
+}
+
+body#micro {
+     	background: none !important;
+}
+/*  Views  */
+#views-loading {
+    color: #666;
+}
+.small-logo {
+    padding:5px 0px 0px 5px;
+}
+/********************** Top pane of Edit View Now moved to the*************************/
+#top-pane {
+    background: none;
+    padding:0;
+}
+/* Configure blockinstance */
+.blockinstance {
+    padding: 0px 0px 20px 0px;
+
+}
+.blockinstance.configure {
+      border: 0px solid #eee;
+      background: #fff;
+    margin-top:30px;
+ }
+.blockinstance-header {
+    width:auto;
+    margin:3px 0;
+    padding:5px 10px;
+    background-color: #f4f4f4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ffffff)); /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, #f4f4f4, #ffffff); /* Chrome 10+, Saf5.1+ */
+      background-image:    -moz-linear-gradient(top, #f4f4f4, #ffffff); /* FF3.6 */
+      background-image:     -ms-linear-gradient(top, #f4f4f4, #ffffff); /* IE10 */
+      background-image:      -o-linear-gradient(top, #f4f4f4, #ffffff); /* Opera 11.10+ */
+      background-image:         linear-gradient(top, #f4f4f4, #ffffff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f4f4f4', EndColorStr='#ffffff'); /* IE6–IE9 */
+}
+.blockinstance-header h4, .blockinstance-header h4 a {
+    color:#000;
+    border:0;
+}
+.blockinstance-header h4 {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #d2d2d2;
+}
+/* The tabs that allow you to select a blocktype category */
+#category-list {
+    margin: 0;
+}
+
+#category-list ul {
+
+}
+#category-list li {
+    margin: 0 !important;
+}
+#category-list li a,
+#category-list li a:link,
+#category-list li a:visited,
+#category-list li a:active {
+    background: #522c94;
+       color: #fff;
+}
+#category-list li a:hover {
+    background: #522c94;
+    color: #ededed;
+}
+#category-list li.current a,
+#category-list li.current a:link,
+#category-list li.current a:visited,
+#category-list li.current a:active {
+    color:#333;
+    padding-top:6px;
+}
+
+
+
+/******************* Between Panes **************************************/
+#layout-link {
+    background: url(../images/icon-change.gif) no-repeat left center;
+    padding-left: 1.5em;
+    padding-top: 1px;
+    font-weight: bold;
+}
+#layout-link.disabled {
+    color: #aaa;
+    cursor: default;
+}
+#layout-link.disabled:hover {
+    text-decoration: none;
+}
+#middle-pane {
+    background: none;
+}
+
+/********************** Bottom pane of Edit View *************************/
+#page #bottom-pane {
+    padding: 0 10px 10px 10px;
+    background: none;
+} 
+/* The panel that contains the blocktype icons */
+/*********************** Blocktype List ***********************/
+#blocktype-list {
+    background:none;
+    border:0;
+    padding:15px 10px;
+    margin:0;
+}
+.blocktype-radio {
+    float:left;
+}
+
+#noblocks {
+    color: #666;
+}
+
+.blocktype {
+    padding:0;
+    margin:0;
+}
+.blocktype img {
+    margin:0;
+}
+
+
+#blocktype-list li {
+    margin: 0;
+    list-style:none;
+    width:100px;
+    margin:10px;
+}
+#blocktype-list li:hover {
+	
+}
+
+
+
+#block-placeholder {
+    border: 2px dashed #bfbfbf;
+    margin-bottom: 2px;
+}
+.moreinfo {
+    width:100px;
+}
+/* Wall */
+.wallpost {
+    background-color: #F8FBFD;
+}
+
+/* tabs for the artefact chooser */
+ul.artefactchooser-tabs {
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 12px !important;
+    background: url(../images/tabs-bg.gif) repeat-x left top;
+    height: 25px;
+    padding-left: 10px !important;
+}
+ul.artefactchooser-tabs li {
+    line-height: 25px;
+    margin: 0 !important;
+    float: left;
+    color: #1E6297 !important;
+}
+ul.artefactchooser-tabs li a,
+ul.artefactchooser-tabs li a:link,
+ul.artefactchooser-tabs li a:visited,
+ul.artefactchooser-tabs li a:active {
+    background: transparent url(../images/tabs-divider.gif) no-repeat right top;
+    color: #474220 !important;
+    padding: 5px 12px 6px 10px;
+    height: 25px;
+}
+ul.artefactchooser-tabs li a:hover {
+    color: #522C94 !important;
+}
+ul.artefactchooser-tabs li.current a,
+ul.artefactchooser-tabs li.current a:link,
+ul.artefactchooser-tabs li.current a:visited
+ul.artefactchooser-tabs li.current a:active {
+    background: transparent url(../images/tabs-over-bg.gif) no-repeat right top;
+    color: #1E6297 !important;
+    padding: 5px 12px 6px 10px;
+    height: 25px;
+}
+ul.artefactchooser-tabs li.current a:hover {
+}
+ul.artefactchooser-subtabs {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+ul.artefactchooser-subtabs li {
+  padding: 0;
+  margin: 0 3px 0 0 !important;
+  border-right: 0;
+}
+ul.artefactchooser-subtabs li a,
+ul.artefactchooser-subtabs li a:link,
+ul.artefactchooser-subtabs li a:visited,
+ul.artefactchooser-subtabs li a:active {
+  text-decoration: none;
+  padding: .25em .5em;
+  background: #F3F7EC;
+}
+ul.artefactchooser-subtabs li a:hover {
+    text-decoration: none;
+}
+ul.artefactchooser-subtabs li.current a,
+ul.artefactchooser-subtabs li.current a:link,
+ul.artefactchooser-subtabs li.current a:visited,
+ul.artefactchooser-subtabs li.current a:active {
+  color: #333;
+  font-weight: bold;
+}
+ul.artefactchooser-subtabs li.current a:hover {
+    text-decoration: none;
+}
+
+#artefactchooser-body {
+}
+
+
+/* table */
+.maharatable thead th {
+    color: #186194;
+}
+
+
+.plan_incomplete td {
+    background: #e9f0f5;
+}
+
+/* View Page footer menu */
+
+/* views */
+.feedback {
+    background: url(../images/feedback.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+.objection {
+    background: url(../images/objectionable.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+.print {
+    background: url(../images/icon-print.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+.watchlist {
+    background: url(../images/watchlist.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+
+/* Collection navigation */
+#collectionnavwrap {
+    background:none;
+}
+.collection-title {
+    color: #fff;
+}
+.viewheader .title {
+color:#fff;
+}
+ul.colnav li a {
+    background: #fff;
+    color: #333 !important;
+    border: 1px solid #d2d2d2;
+    border-bottom:0;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+}
+ul.colnav li a:hover {
+    background: #522C94 !important;
+    color: #fff !important;
+    text-decoration:none;
+    border: 1px solid #d2d2d2;
+    border-bottom:0;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+}
+li.selected span {
+    background: #522C94 !important;
+    color: #fff !important;
+    text-decoration:none;
+    border: 1px solid #d2d2d2;
+    border-bottom:0;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+    font-weight:bold;
+}
+.blockinstance-content .groupviewsection h5 {
+    color: #333;
+}

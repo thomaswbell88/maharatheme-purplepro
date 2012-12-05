@@ -1,0 +1,240 @@
+ /*
+ * @author     Thomas Bell @ TDM Open Source Services
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
+ * @copyright  (C) 2012 TDM Open Source Services http://www.tdm.info
+ */
+ #category-list {
+    min-width: 800px;
+    position:relative;
+    top:0px;
+    margin: 0;
+    left:60px;
+    z-index:1000;
+}
+#category-list ul {
+    background-color: #333;
+    background-image: -webkit-gradient(linear, left left, left right, from(#333333), to(#000000)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #333333, #000000); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(left, #333333, #000000); /* FF3.6 */
+    background-image:     -ms-linear-gradient(left, #333333, #000000); /* IE10 */
+    background-image:      -o-linear-gradient(left, #333333, #000000); /* Opera 11.10+ */
+    background-image:         linear-gradient(left, #333333, #000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#000000'); /* IE6–IE9 */
+    height: 25px;
+    padding-left: 10px;
+}
+#category-list li {
+    line-height: 20px;
+    margin: 0 !important;
+    float: left;
+    color: #fff;
+    transform: vertical;
+}
+#category-list li a,
+#category-list li a:link,
+#category-list li a:visited,
+#category-list li a:active {
+    background: transparent;
+       color: #fff;
+    padding: 5px 12px 6px 10px;
+    height: 20px;
+}
+#category-list li a:hover {
+    background: transparent;
+    color: #888;
+}
+#category-list li.current a,
+#category-list li.current a:link,
+#category-list li.current a:visited,
+#category-list li.current a:active {
+    
+    padding: 5px 12px 6px 10px;
+    height: 20px;
+    background:transparent linear-gradient(45deg, white);
+    color:#fff;
+}
+#blocktype-list {
+    min-height:100% !important;
+    display:inline;
+    background-color: #000;
+    background-image: -webkit-gradient(linear, left left, left right, from(#000000), to(#333333)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #000000, #333333); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(left, #000000, #333333); /* FF3.6 */
+    background-image:     -ms-linear-gradient(left, #000000, #333333); /* IE10 */
+    background-image:      -o-linear-gradient(left, #000000, #333333); /* Opera 11.10+ */
+    background-image:         linear-gradient(left, #000000, #333333);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#333333'); /* IE6–IE9 */
+    z-index:1000;
+        border:0;
+    padding:15px 0px;
+    margin:0;
+    position:fixed;
+    left:0px;
+    top:0px;
+    min-width:60px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+
+}
+#blocktype-list {
+    min-height:100% !important;
+    display:inline;
+    background-color: #000;
+    background-image: -webkit-gradient(linear, left left, left right, from(#000000), to(#333333)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #000000, #333333); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(left, #000000, #333333); /* FF3.6 */
+    background-image:     -ms-linear-gradient(left, #000000, #333333); /* IE10 */
+    background-image:      -o-linear-gradient(left, #000000, #333333); /* Opera 11.10+ */
+    background-image:         linear-gradient(left, #000000, #333333);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#333333'); /* IE6–IE9 */
+    z-index:1000;
+        border:0;
+    padding:15px 0px;
+    margin:0;
+    position:fixed;
+    left:0px;
+    top:0px;
+    min-width:60px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+
+}
+.blocktype-radio {
+    float:left;
+}
+
+#noblocks {
+    color: #666;
+}
+
+.blocktype {
+    padding: 1px;
+    margin:1px;
+}
+.blocktype img {
+    height: 37px;
+    width:44px;
+    z-index:12000;
+    margin: 4px 0px 1px 0px;
+}
+
+
+#blocktype-list li {
+    background: url('../images/round_shine_54x54.png') no-repeat center;    
+    float: none;
+    height: 44px;
+    line-height:1.4em;
+    margin: 0;
+    min-height:0px !important;
+    text-align:center;
+    white-space:normal;
+    width:60px;
+    visibility:visible;
+    list-style:none;
+
+}
+#blocktype-list li:hover {
+    background: url('../images/round_selected_66x66.png') no-repeat center;    
+    float: none;
+    height: 44px;
+    line-height:1.4em;
+    margin: 0;
+    min-height:0px !important;
+    text-align:center;
+    white-space:normal;
+    width:60px;
+    visibility:visible;
+    list-style:none;
+}
+/* To make the block title and description appear in a div to the right of the blocktype img */ 
+.moreinfo {
+    float:left;
+    left:60px;
+    top:inherit;
+    position:fixed;
+    visibility:hidden;
+    width:200px;
+    background: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    z-index:9999;
+}
+.moreinfo h4 {
+    color: #fff;
+    font-weight:bold;
+    font-size:15px;
+    padding-top:5px;
+}
+li#desc:hover div.moreinfo {
+    float:left;
+    left:60px;
+    position:fixed;
+    visibility:visible;
+    width:200px;
+    background: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    z-index:9999;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+/* This stops the blocktype title & description from showing when the category list is clicked */
+
+#blocktype-list li div.blocktype div {
+    width:200px;
+    white-space: normal;
+    visibility:hidden;
+    position:absolute;
+    left:60px;
+    z-index:10004;
+    top:inherit;
+}
+
+
+#blocktype-list .blocktype h4 {
+    width:200px;
+    visibility:hidden;
+    position:fixed;
+    left:60px;
+    padding: 5px 15px;
+}
+/* These are the styles and effects for the blocktype title and description */
+
+a.imglink {
+    width:44px;
+    height:44px;
+    z-index:1003;
+}
+
+a.imglink div {
+    position: absolute;
+    display: none !important;
+    left: 60px;
+    margin: 0em;
+    padding: 1em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+a.imglink:hover div {
+    display:block;
+    height:50px;
+    width:100%;
+    border: solid 1px #999;
+    background: #000;
+    z-index: 1002;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#top-pane {
+    width:100%;
+    height:23px;
+    position:fixed;
+    top:0px !important;
+    left:0px !important;
+    z-index:1001;
+    background: url('../images/gradient_more_items_bottom.png') repeat-x top center;
+    padding:0;
+}

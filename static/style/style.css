@@ -1,0 +1,689 @@
+/**
+ * Mahara: Electronic portfolio, weblog, resume builder and social networking
+ * Copyright (C) 2006-2007 Catalyst IT Ltd (http://www.catalyst.net.nz)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @author     Thomas Bell @ TDM Open Source Services
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL
+ * @copyright  (C) 2012 TDM Open Source Services http://www.tdm.info
+ */
+
+/* General rules */
+body {
+     	background:none;
+	color: #444;
+	min-height: 101%;
+}
+acronym {
+    border-bottom: 1px dotted #d4d1c0;
+}
+a, a:visited, a:link, a:active {
+    color: #522c94;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #000;
+    text-decoration: underline;
+}
+h1,
+h2 {
+    color: #522c94;
+}
+h3, 
+h4 {
+    color: #522c94;
+}
+h5,
+h6 {
+    color: #522c94;
+}
+
+/**************************** Tables ****************************/
+#main-wrapper {
+	width:auto;
+	background: #fff;
+}
+.viewheadertop {
+    padding:5px;
+}
+.viewheadertop a {
+	color:#fff;
+}
+
+.main-column {
+	background: #fff !important;
+}
+.main-column thead th {
+    color: #522C94;
+	border-bottom: 1px solid #ccc;
+}
+.main-column tbody th {
+    color: #999999;
+}
+/* table with th border-bottom */
+#searchresults thead th,
+.filelist,
+.tag-results #results {
+	border-bottom: 1px solid #ccc;
+}
+/* table with tfoot border-top */
+#searchresults tfoot td,
+#adminstitutionslist tfoot td,
+#profileicons tfoot td,
+#activitylist tfoot td {
+	border-top: 1px solid #ccc;
+}
+.tablerenderer-loading {
+}
+/* Alternative row background colours */
+.r0,
+.r0 td {
+    background-color: #fafbf7;
+}
+.r1,
+.r1 td {
+    background-color: #f3f7ec;
+}
+tr.folder td {
+	background-color: #f4f7f9 !important;
+}
+
+/**************************** Pagination ****************************/
+div.pagination a {
+	background-color: #E7EFC5;
+	border: 1px solid #E7EFC5;
+}
+
+/**************************** Forms ****************************/
+/* Label */
+label {
+	color: #333;
+}
+/* required */
+.required th, .required label, .requiredmarker, #register_tandc_container th {
+    color: #c81511;
+}
+/* override required colour to normal colour */
+.required label.plain, .required.radio td label, .required.emaillist td label {
+	color: #444;
+}
+/* description */
+.pieform td.description {
+	color: #7d7d7d;
+}
+
+/* Legend */
+legend {
+	color: #313131;
+}
+
+/* Select */
+select {
+    border: 1px solid #D1D1D1;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #d2d2d2;
+}
+
+/* Text fields and such */
+input.text, 
+input.password, 
+input.file,
+textarea,
+input[type=text],
+input[type=password],
+input[type=file] {
+    border: 1px solid #D1D1D1;
+}
+
+/****************************** Buttons ****************************/
+/** Top wrapper buttons **/
+#top-wrapper a {
+	color:#fff;	
+}
+/** input buttons **/
+.btn,
+input.submit,
+input.cancel,
+button,
+.buttondk,
+input.button,
+input.select,
+input#files_filebrowser_edit_artefact,
+ul.groupuserstatus li a {
+	border-size: 1px;
+	border-style:solid;
+	border-color: #555 #999 #555 #999;
+	background: #fff url(../images/btn-bkgd.gif) repeat-x left top;
+	color: #000 !important;
+	padding: 5px 15px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-weight: bold;
+}
+/** hover for buttons **/
+.btn:hover,
+input.submit:hover,
+input.cancel:hover,
+button:hover,
+.buttondk:hover,
+input.button:hover,
+input.select:hover,
+input#files_filebrowser_edit_artefact:hover,
+ul.groupuserstatus li a:hover {
+	border-size: 1px;
+	border-style:solid;
+	border-color: #555 #999 #555 #999;
+	background: #fff url(../images/btn-bkgd-hover.gif) repeat-x left top;
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+/** Depress for buttons **/
+.btn:active,
+input.submit:active,
+input.cancel:active,
+button:active,
+.buttondk:active,
+input.button:active,
+input.select:active,
+input#files_filebrowser_edit_artefact:active,
+ul.groupuserstatus li a:active {
+	border-color: #555 #999 #555 #999;
+	background: #ededed url(../images/btn-bkgd-hover.gif) repeat-x left 1px;
+	color: #FFF;
+	padding: 5px 15px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-weight: bold;
+}
+
+/* buttons that look like links with icons */
+.icon {
+	color: #292929;
+}
+/* except those that shouldn't */
+span.btn a.icon, a span.icon {
+	color: #FFF;
+}
+/* buttons that look like links */
+.linkbtn {
+	color: #292929; 
+}
+
+/* Search buttons */
+#usf_submit,
+#usf_submit:hover {
+	background: transparent url(../images/btn-search.png) no-repeat !important;
+	border: 0;
+	color: #292929;
+	text-indent: -999px;
+	font-size: 1%;
+	cursor: pointer;
+	vertical-align: bottom;
+	height: 25px;
+	width: 25px;
+	margin-left: 2px;
+	padding: 5px 15px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-weight: bold;
+}
+#selfsearch button,
+.query-button,
+#moderator_search_btn,
+#search_search,
+#selfsearch button,
+#search_submit,
+.btn-search,
+#selfsearch button:hover,
+.query-button:hover,
+#moderator_search_btn:hover,
+#search_search:hover,
+#selfsearch button:hover,
+#search_submit:hover,
+.btn-search:hover {
+	background: transparent url(../images/btn-search.png) no-repeat !important;
+	border: 0;
+	color: #292929;
+	text-indent: -999px;
+	font-size: 1%;
+	cursor: pointer;
+	vertical-align: bottom;
+	height: 25px;
+	width: 25px;
+	margin-left: 2px;
+	padding: 5px 15px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-weight: bold;
+}
+
+/**************************** Top of page elements ****************************/
+#main-wrapper {
+	background: #fff !important;
+}
+
+#container, #containerX {
+	width: 90%;
+	min-width: 950px;
+	background: none !important;
+	-moz-box-shadow: 0 0 3px 3px #d8d8d8;
+	-webkit-box-shadow: 0 0 3px 3px #d8d8d8;
+	box-shadow: 0 0 3px 3px #d8d8d8;
+	border-radius: 0px 0px 15px 15px;
+	-webkit-border-radius:0px 0px 15px 15px;
+	-moz-border-radius:0px 0px 15px 15px;
+}
+#top-wrapper {
+    background: #522C94 !important;
+	border: 0;
+	border-radius:0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#containerX #top-wrapper {
+	height: auto;
+}
+#loading-box {
+    background-color: #999999 !important;
+}
+#site-logo {
+    padding: 15px 0px 15px 15px;
+}
+#top-wrapper ul,
+#top-wrapper li {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    display: inline;
+}
+/* Search and language bar */
+#language-select, #usf {
+	font-size: .8333em !important;
+}
+#usf_query_container input {
+    color: #767676;
+	background-color: #fff !important;
+	width: 205px;
+  -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+     -moz-border-radius: 4px; /* FF1-3.6 */
+     border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+/**************** TOP NAVIGATION ****************/
+#right-nav ul {
+}
+main-nav ul {
+
+}
+#main-nav li {
+	font-size: 15px;    
+	color: #d2d2d2;
+    * zoom: 1;
+    * margin-top: -5px;
+}
+* html #main-nav li {
+    * margin-top: -8px;
+}
+#main-nav li a,
+#main-nav li a:link,
+#main-nav li a:visited,
+#main-nav li a:active {
+	background:#522C94;
+	background: -moz-linear-gradient(#522C94, #7B57B9);
+	background: linear-gradient(#522C94, #7B57B9);
+	background: -webkit-linear-gradient(#522C94, #7B57B9);
+	background: -o-linear-gradient(#522C94, #7B57B9);
+	border-top: 0px solid white;
+	border-right: 1px solid #7B57B9;
+	font-size: 15px !important;    	
+    color: #fff;
+	font-size: 12px;
+	height: 35px;
+	line-height: 35px;
+   	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 5px 10px 5px 12px;
+	border-right: 0px solid #313131;
+}
+#main-nav li a:hover {
+	font-size: 15px;    	
+    	color: #fff;
+    	text-decoration: none;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(110,78,165,0.0)), to(rgba(232,229,238,0.2))); 
+  	background-image: -webkit-linear-gradient(top, rgba(232,229,238,0.2), rgba(232,229,238,0.2)); 
+  	background-image:    -moz-linear-gradient(top, rgba(232,229,238,0.2), rgba(232,229,238,0.2)); 
+  	background-image:     -ms-linear-gradient(top, rgba(232,229,238,0.2), rgba(232,229,238,0.2));
+  	background-image:      -o-linear-gradient(top, rgba(232,229,238,0.2), rgba(232,229,238,0.2)); 
+  	background-image:         linear-gradient(top, rgba(232,229,238,0.2), rgba(232,229,238,0.2));
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#999999'); 
+}
+#main-nav li.selected a,
+#main-nav li.selected a:link,
+#main-nav li.selected a:visited,
+#main-nav li.selected a:active {
+    color: #fff;
+	background: url(../images/menu-over-bg.gif) no-repeat left bottom;
+}
+#main-nav li.selected a:active {
+	padding-top:8px;
+}
+
+/**************** SUB NAVIGATION ****************/
+#sub-nav {
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+	line-height: 28px;
+	border: none;
+	min-height: 28px;
+	background: #522C94 !important;
+}
+#sub-nav ul {
+    padding: 0 0 10px 5px;
+	height:25px;
+}
+#sub-nav li a,
+#sub-nav li a:link,
+#sub-nav li a:visited,
+#sub-nav li a:active {
+    color: #fff;
+	height: 25px;
+    padding: 3px 8px 7px 7px;
+	
+
+}
+#sub-nav li a:hover {
+    text-decoration: underline;
+    height: 25px;
+}
+#sub-nav li.selected a,
+#sub-nav li.selected a:link,
+#sub-nav li.selected a:visited,
+#sub-nav li.selected a:active {
+	background: url(../images/submenu-over-bg.png) no-repeat bottom center;
+    	color: #fff;
+}
+
+/**************** IN PAGE TAB NAVIGATION ****************/
+ul.in-page-tabs {
+  line-height: 25px;
+  height: 25px;
+  font-size: 12px;
+  background: url(../images/tabs-bg.gif) repeat-x left top;
+  display: block;
+  padding-left: 1px;
+}
+ul.in-page-tabs li {
+  float: left;
+  height: 25px;
+  margin: 0 !important;
+  background: none;
+  line-height: 25px;
+}
+ul.in-page-tabs li a,
+ul.in-page-tabs li a:link,
+ul.in-page-tabs li a:visited,
+ul.in-page-tabs li a:active {
+  color: #313131;
+  padding: 5px 12px 4px 10px;
+  text-decoration: none;
+  background: transparent url(../images/tabs-divider.gif) no-repeat right top;
+  border-right: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+}
+ul.in-page-tabs li a:hover {
+  color: #522c94;
+}
+ul.in-page-tabs li a.current-tab,
+ul.in-page-tabs li a.current-tab:link,
+ul.in-page-tabs li a.current-tab:visited,
+ul.in-page-tabs li a.current-tab:active {
+  background: transparent url(../images/tabs-over-bg.gif) no-repeat right bottom;
+  color: #000;
+  border-bottom: 1px solid #FFF;
+  padding: 5px 12px 4px 10px;
+}
+.subpage {
+	display: block;
+	border-top: 0;
+}
+
+
+/**************** SIDEBAR *********/
+#left-column,
+#right-column {
+    padding: 0;
+}
+div.sideblock {
+    background: url(../images/sidebar-bg.gif) repeat-x top;
+}
+div.sideblock h3 a,
+div.sideblock h3 a:link,
+div.sideblock h3 a:visited,
+div.sideblock h3 a:active {
+	color: #522c94;
+}
+div.sideblock h3 a:hover {
+	color: #522c94;
+}
+
+/* Side Login */
+#sb-loginbox input.text,
+#sb-loginbox input.password {
+    width: 225px;
+	border: 1px solid #d1d1d1;
+}
+#sb-loginbox label {
+	color: #677A8A;
+}
+
+/* Side Profile */
+#sb-profile ul ul a,
+#sb-profile ul ul a:link,
+#sb-profile ul ul a:visited,
+#sb-profile ul ul a:active {
+	color: #292929;
+}
+#sb-profile li#pendingfriends a,
+#sb-profile li#pendingfriends a:link,
+#sb-profile li#pendingfriends a:visited,
+#sb-profile li#pendingfriends a:active {
+	color: #522c94 !important;
+}
+
+
+/* Side Quota Bar */
+#quota_used {
+    color: #522c94;
+}
+#quota_total {
+    color: #292929;
+}
+
+/* Side Search */
+.sidebar #selfsearch input {
+	width: 186px;
+    padding: 3px 5px;
+    font-size: 1em;
+    color: #767676;
+	background-color: #999999;
+}
+
+/******************** FOOTER ****************************/
+#footer-wrap {
+    background: #522C94;
+	border: 0;
+    color: #bababa;
+	border-radius: 0px 0px 15px 15px;
+	-moz-border-radius: 0px 0px 15px 15px;
+	-webkit-border-radius: 0px 0px 15px 15px;
+	margin-bottom: 40px;
+}
+#micro #footer-wrap {
+     	background: none;
+    color: #bababa;
+}
+#footernav {
+    color: #bababa;
+}
+#footernav a,
+#footernav a:link,
+#footernav a:active,
+#footernav a:visited {
+    color: #FFF;
+}
+#footernav a:hover {
+    color: #FFF;
+}
+#powered-by {
+}
+#performance-info {
+	color: #bababa;
+}
+#performance-info span {
+	color: #c9c9c9;
+}
+#performance-info a,
+#performance-info a:hover {
+	color: #bababa;
+	text-decoration: none;
+}
+#version {
+	color: #c9c9c9;
+}
+#release {
+	color: #c9c9c9;
+}
+#release a {
+    color: #FFF;
+}
+
+
+/* Group: members (Add members) */
+#addmembers {
+	background-color: #EBF0F4;
+	border: 1px solid #d2d2d2;
+}
+
+/* Settings > Preferences */
+#accountprefs table label,
+#accountprefs table th {
+	color: #66879F;
+}
+#accountprefs table td label {
+	color: #333333;
+	font-size: 1em;
+}
+
+/* Home page info boxes */
+.home-info {
+    border: solid 2px #cccccc;
+    background: #eeeeee;
+}
+.home-info p.subtitle {
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+.home-info-table {
+	border: 0;
+}
+
+/* Collections */
+#collectionviews {
+	background: #f6f6f6;
+}
+#collectionviews table {
+    width: 100%;
+}
+* html #collectionviews table,
+* html #collectionviews {
+	width: 96%;
+}
+#collectionviews td.displayordercontrols div {
+	padding-top: 5px;
+}
+#collectionviews td.displayordercontrols div.justdown {
+    padding-left: 19px;
+}
+
+.inbox-message {
+	background: #FAFBF7;
+}
+
+.attachments tbody th {
+	color: #333;
+}
+
+/**************** DROPDOWN NAVIGATION ****************/
+/**************** SUB NAVIGATION *********************/
+
+#main-nav .dropdown-sub {
+    	background: #fff !important;
+	color: #313131
+}
+#main-nav .dropdown-sub li a,
+#main-nav .dropdown-sub li a:link,
+#main-nav .dropdown-sub li a:visited,
+#main-nav .dropdown-sub li a:active {
+    	color: #d2d2d2;
+    	text-decoration: none !important;
+	background: #999 !important;
+}
+#main-nav .dropdown-sub li a:hover,
+#main-nav .dropdown-sub li.selected a:hover {
+    	color: #d2d2d2 !important;
+    	text-decoration: none !important;
+	background: #999 !important;
+}
+.dropdown-main {
+	color: #000;
+}
+span.next {
+	width:20px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+}
+span.prev {
+	width:20px;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+}
+.slideshow .control {
+	font-size: 60px;	
+}
+.main-column h1:first-child, .main-column h2:first-child, .main-column h3:first-child, .main-column h4:first-child, .main-column h5:first-child, .main-column h6:first-child, td.filedescription {
+	word-break:normal;
+}
